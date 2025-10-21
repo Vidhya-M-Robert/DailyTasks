@@ -1,5 +1,4 @@
 function IncludeArray(array1,array2,pos){
-    let newArr = [];
     for(let i = 0; i<array1.length;i++){
         if(i === pos){
             let pushValue = array1[pos]
