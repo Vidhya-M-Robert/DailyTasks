@@ -1,0 +1,11 @@
+#borderColor{
+    width : 400px;
+    height: 300px;
+    display: flex;
+    background-color: rgb(255, 251, 0); 
+    justify-self: center;
+    margin-top: 15%;
+    border: 8px solid;
+    border-radius: 30px;
+    cursor: pointer;
+}
