@@ -26,4 +26,4 @@ for (const student of students) {
     result.push({ name: student.name, status });
 }
 console.log(result);
-//# sourceMappingURL=t3d1.js.map
+//# sourceMappingURL=t3d1Up.js.map
