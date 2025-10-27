@@ -21,53 +21,48 @@ input.addEventListener("keydown", (e) => {
   renderTable();
 }); //closes the addEventListener callback.
 
-// function renderTable() {
-//   tbody.innerHTML = "";           //clears previous rows.
-//   logs.forEach(log => {          // loops over each log
-//     const row = `<tr>
-//         <td>${log.key}</td>
-//         <td>${log.code}</td>
-//         <td>${log.which}</td>
-//         <td>${log.type}</td>
-//         <td>${log.time}</td>
-//       </tr>`;
-//     tbody.innerHTML += row;       //appends new row string to the tbody HTML
-//   });
-// }
-
 function renderTable() {
-  while (tbody.firstChild) {
-    tbody.removeChild(tbody.firstChild);
-  }
-
-  logs.forEach((log) => {
-    const tr = document.createElement("tr");
-    const tdKey = document.createElement("td");
-    tdKey.textContent = log.key;
-    tr.appendChild(tdKey);
-
-    const tdCode = document.createElement("td");
-    tdCode.textContent = log.code;
-    tr.appendChild(tdCode);
-
-    const tdWhich = document.createElement("td");
-    tdWhich.textContent = log.which;
-    tr.appendChild(tdWhich);
-
-    const tdType = document.createElement("td");
-    tdType.textContent = log.type;
-    tr.appendChild(tdType);
-
-    const tdTime = document.createElement("td");
-    tdTime.textContent = log.time;
-
-    tbody.appendChild(tr);
+  tbody.innerHTML = "";           //clears previous rows.
+  logs.forEach(log => {          // loops over each log
+    const row = `<tr>
+        <td>${log.key}</td>
+        <td>${log.code}</td>
+        <td>${log.which}</td>
+        <td>${log.type}</td>
+        <td>${log.time}</td>
+      </tr>`;
+    tbody.innerHTML += row;       //appends new row string to the tbody HTML
   });
 }
 
-// const input = document.getElementById("textInput");
+// function renderTable() {
+//   while (tbody.firstChild) {
+//     tbody.removeChild(tbody.firstChild);
+//   }
 
-// input.addEventListener("keydown", (e) => {
-//   console.log(e);
+//   logs.forEach((log) => {
+//     const tr = document.createElement("tr");
+//     const tdKey = document.createElement("td");
+//     tdKey.textContent = log.key;
+//     tr.appendChild(tdKey);
 
-// });
+//     const tdCode = document.createElement("td");
+//     tdCode.textContent = log.code;
+//     tr.appendChild(tdCode);
+
+//     const tdWhich = document.createElement("td");
+//     tdWhich.textContent = log.which;
+//     tr.appendChild(tdWhich);
+
+//     const tdType = document.createElement("td");
+//     tdType.textContent = log.type;
+//     tr.appendChild(tdType);
+
+//     const tdTime = document.createElement("td");
+//     tdTime.textContent = log.time;
+
+//     tbody.appendChild(tr);
+//   });
+// }
+
+

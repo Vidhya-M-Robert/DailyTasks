@@ -1,0 +1,33 @@
+ul{
+    list-style-type: none;
+}
+li div{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 80px;
+    position: relative;
+    width: 80px;
+}
+div{
+    margin-bottom: 40px;
+}
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+.tooltipText {
+  visibility: hidden; 
+  width: 150px;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltipText {
+  visibility: visible;
+  overflow: visible;
+  white-space: nowrap;
+}
