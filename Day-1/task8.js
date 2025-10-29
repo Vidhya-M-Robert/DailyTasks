@@ -27,8 +27,9 @@ function groupAnagrams(words){
 function testCases(){
     const testcase = [
         {
-            input:["eat", "tea", "tan", "ate", "nat", "bat"],
-            output: [ [ 'eat', 'tea', 'ate' ], [ 'tan', 'nat' ], [ 'bat' ] ]
+            input: ["care", "race", "acre", "dog", "god", "cat"],
+            output: [ [ 'care', 'race', 'acre' ], [ 'dog', 'god' ], [ 'cat' ] ]
+
         },
         {
             input: [],
@@ -67,8 +68,8 @@ function testCases(){
 
         },
         {
-            input: ["care", "race", "acre", "dog", "god", "cat"],
-            output: [ [ 'care', 'race', 'acre' ], [ 'dog', 'god' ], [ 'cat' ] ]
+            input: ["eat", "tea", "tan", "ate", "nat", "bat"],
+            output: [ [ 'eat', 'tea', 'ate' ], [ 'tan', 'nat' ], [ 'bat' ] ]
 
         },
          {

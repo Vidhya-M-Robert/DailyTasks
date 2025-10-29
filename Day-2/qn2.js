@@ -7,8 +7,7 @@ function wordCount(str){
     }
     else{
     str = str.replaceAll(/[!@#$%^&*()><?_+.,';/]/g,"");
-    str = str.replaceAll((/\s+/g,' '));
-    let newString = str.trim();
+    let newString = str.trim().replace(/\s+/g, " ");
     let count = 0;
     if(newString === "") return count;
     for(let i = 0; i <= newString.length; i++){
@@ -19,9 +18,9 @@ function wordCount(str){
     return count+1;
 }
 }
-console.log(wordCount("Hello   World."));
-console.log(wordCount("This is a sample sentence."));
-console.log(wordCount("Programming is fun!"));
+// console.log(wordCount("Hello   World."));
+// console.log(wordCount("This is a sample sentence."));
+// console.log(wordCount("Programming is fun!"));
 
 const testCases = [
     {
@@ -66,14 +65,41 @@ const testCases = [
     },
     {
         testNumber: 9,
-        input: "This is a sample! sentence.",
-        output: 5
+        input: ["hey what is going on"],
+        output: `Invalid Entry`
     },
      {
         testNumber: 10,
-        input: "hey everybody.",
+        input: "hey     everybody.",
         output: 2
     },
+    {
+        testNumber: 11,
+        input: "hey     everybody.",
+        output: 2
+    },
+    {
+        testNumber: 12,
+        input: null,
+        output: `Invalid Entry`
+    },
+     {
+        testNumber: 13,
+        input: "hey",
+        output: 1
+    },
+    {
+        testNumber: 14,
+        input: {hello: "everyone"},
+        output: `Invalid Entry`
+    },
+     {
+        testNumber: 15,
+        input: "This is a sample! sentence.",
+        output: 5
+    },
+    
+    
 ]
 testCases.forEach(test => {
     let output = wordCount(test.input)

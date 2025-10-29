@@ -4,17 +4,21 @@
 //Map
 let array=[2,4,6,8];
 function myMap(arr,callback){
+    if(typeof(arr) !== "array"){
+        return "Invalid"
+    }
+    else{
     let output = [];
     for(let i = 0; i<arr.length; i++){
     output.push(callback(arr[i]));
     }
     return output
 }
-
-// function addTwo(num) {
-//     return num + 2;
-// }
-console.log(myMap(array, n)); 
+}
+function addTwo(num) {
+    return num ;
+}
+console.log(myMap(arr, callback)); 
 
 const testCases = [
     {
@@ -37,6 +41,90 @@ const testCases = [
             callback : n
         },
         output: [4,6,8,10]
+    },
+    {
+        input: {
+            arr: [2],
+            callback : n=>n*2
+        },
+        output: [4]
+    },
+     {
+        input: {
+            arr: {},
+            callback : n=>n*2
+        },
+        output: "Invalid"
+    },
+     {
+        input: {
+            arr: [2],
+            callback : n=>n*2
+        },
+        output: [4]
+    },
+     {
+        input: {
+            arr: [2],
+            callback : n=>n*2
+        },
+        output: [4]
+    },
+     {
+        input: {
+            arr: [2],
+            callback : n=>n*2
+        },
+        output: [4]
+    },
+     {
+        input: {
+            arr: [2],
+            callback : n=>n*2
+        },
+        output: [4]
+    },
+     {
+        input: {
+            arr: [2],
+            callback : n=>n*2
+        },
+        output: [4]
+    },
+     {
+        input: {
+            arr: [2],
+            callback : n=>n*2
+        },
+        output: [4]
+    },
+     {
+        input: {
+            arr: [2],
+            callback : n=>n*2
+        },
+        output: [4]
+    },
+     {
+        input: {
+            arr: [2],
+            callback : n=>n*2
+        },
+        output: [4]
+    },
+     {
+        input: {
+            arr: [2],
+            callback : n=>n*2
+        },
+        output: [4]
+    },
+     {
+        input: {
+            arr: [2],
+            callback : n=>n*2
+        },
+        output: [4]
     },
 ]
 
