@@ -14,19 +14,3 @@ console.log(JSON.stringify(longestCommonPrefix(['dog','racecar','car'])));
 console.log(JSON.stringify(longestCommonPrefix([])));
 
 
-// const listItems=document.querySelectorAll(".list_item")
-// const billamount=document.getElementById("list")
-// const container=document.getElementById("container")
-// listItems.forEach(lists=>{
-//     lists.addEventListener("mouseenter",()=>{
-//         let div=document.createElement("div")
-//         div.style.backgroundColor="black"
-//         div.style.color="white"
-//         div.textContent=lists.textContent
-//         div.style.padding="10px"
-//         container.appendChild(div)
-//           lists.addEventListener("mouseleave",()=>{
-//         container.removeChild(div)
-//     })
-//     })
-// })

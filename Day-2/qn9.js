@@ -5,3 +5,4 @@ function EmailValidate(str){
 console.log(EmailValidate("test@example.com"));
 console.log(EmailValidate("invalid.email.com"));
 console.log(EmailValidate("user@domain"));
+
