@@ -18,7 +18,7 @@ function MissingConsecutiveNumber(arr){
         }
     }
 }
-MissingConsecutiveNumber([1, 2, 3, 5, 6]);
+// MissingConsecutiveNumber([1, 2, 3, 5, 6]);
 function testCases(){
     const testcase = [
         {

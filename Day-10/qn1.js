@@ -4,4 +4,3 @@ function deepClone(obj){
     return parses;
 }
 console.log(deepClone({name: 'Harry', hobbies: ['reading', 'swimming','cycling'], gender: 'male'}));
-

@@ -18,4 +18,4 @@ function countdown(targetDate){
     },1000); 
     return timer;
 }
-countdown("2025-11-01");
+countdown("2025-11-04");
