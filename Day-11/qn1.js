@@ -1,12 +1,6 @@
 function calculateTotal(billAmount,taxPercentage){
-    if(taxPercentage === "" || taxPercentage === null || Number.isInteger(taxPercentage)){
-        console.log("Invalid");
-    }
-    if(billAmount === "" || billAmount === null || Number.isInteger(billAmount)){
-        console.log("Invalid");
-    }
-    if(typeof(taxPercentage || typeof(billAmount))){
-        console.log("Invalid");
+   if (typeof billAmount !== "number" || typeof taxPercentage !== "number" || isNaN(billAmount) || isNaN(taxPercentage) || billAmount <= 0) {
+        return "Invalid";
     }
     let taxPer;
     if(taxPercentage !== undefined){
@@ -16,6 +10,7 @@ function calculateTotal(billAmount,taxPercentage){
         taxPer = 20;
     }
     const taxAmount = billAmount * (taxPer / 100);
+    return taxAmount
     // console.log(taxAmount);
 }
 calculateTotal(["70000"],18);
@@ -75,42 +70,18 @@ const testCases = [
         input2: null,
         output: "Invalid"
     },
-    // {
-    //     testNumber: 10,
-    //     input1: 70000,
-    //     input2: 18,
-    //     output: 12600
-    // },
      {
         testNumber: 11,
         input1: true,
         input2: {},
         output: "Invalid"
     },
-    //  {
-    //     testNumber: 12,
-    //     input1: 70000,
-    //     input2: 18,
-    //     output: 12600
-    // },
-    // {
-    //     testNumber: 13,
-    //     input1: 70000,
-    //     input2: 18,
-    //     output: 12600
-    // },
-    // {
-    //     testNumber: 14,
-    //     input1: 70000,
-    //     input2: 18,
-    //     output: 12600
-    // },
-    // {
-    //     testNumber: 15,
-    //     input1: 70000,
-    //     input2: 18,
-    //     output: 12600
-    // },
+     {
+        testNumber: 12,
+        input1: 70000,
+        input2: {},
+        output: "Invalid"
+    },
 ];
 testCases.forEach(test => {
     let output = calculateTotal(test.input1,test.input2)
