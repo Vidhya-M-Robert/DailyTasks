@@ -1,0 +1,29 @@
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+li div{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 100px;
+    position: relative;
+    width: 80px;
+}
+.tooltipText {
+  visibility: hidden; 
+  width: 250px;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 7%;
+  transform: translate(-50%);
+}
+.tooltip:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
