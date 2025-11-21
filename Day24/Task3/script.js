@@ -12,5 +12,5 @@ input.addEventListener("input", function (e) {
     if (count < 20) {
         paraId.style.color = "black";
     }
-    paraId.innerText = " Count : ".concat(count);
+    paraId.innerText = "Count : ".concat(count);
 });

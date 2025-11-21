@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parCls{
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(138, 186, 248);
+}
+.neww{
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+}
+.hamburger{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+.crossImg{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sideHead{
+    font-size: larger;
+    margin-top: 20px;
+}
+.mainSub{
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(66, 64, 64);
+    margin-bottom: 70px;
+}
+.sub{
+    font-size: medium;
+    padding: 10px 10px;
+    /* margin-top: 10px; */
+}
+.subCont{
+    display: none;
+    padding-left: 20px;
+}
+/* .mainSub:hover .sub{
+    display: block;
+} */
