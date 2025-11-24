@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar Accordion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- <div class="menu-icon" id="open-btn">☰</div> -->
+ <div class="menu-icon" id="open-btn">
+    <img class="icon-img" src="hamburger.png" alt="">
+ </div>
+<div class="sidebar" id="sidebar">     <!--Sliding sidebar menu-->
+     <!-- <div class="close-icon" id="close-btn">✖</div> -->
+    <div class="close-icon" id="close-btn">
+        <img class="icon-img" src="cross.png" alt="">
+    </div>
+    <h2 class="sidebar-title">Menu</h2>
+    <div class="accordion">
+        <button class="accordion-btn">Section 1</button>
+        <div class="accordion-content">
+            <p>Item 1</p>
+            <p>Item 2</p>
+        </div>
+    </div>
+    <div class="accordion">
+        <button class="accordion-btn">Section 2</button>
+        <div class="accordion-content">
+            <p>Option A</p>
+            <p>Option B</p>
+        </div>
+    </div>
+    <div class="accordion">
+        <button class="accordion-btn">Section 3</button>
+        <div class="accordion-content">
+            <p>More content...</p>
+        </div>
+    </div>
+
+</div>
+    
+</body>
+<script src="script.js"></script>
+</html>

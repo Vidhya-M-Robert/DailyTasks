@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* position: fixed  => keeps it visible even when scrolling*/
+/* z-index: 1000 => brings it above other elements */
+.menu-icon{
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    z-index: 1000;
+    /* transition: left 0.3s ease; */
+}
+
+/* styles the close button inside the sidebar */
+/* display: none => hides it until sidebar is opened */
+.close-icon{
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    position: absolute;   
+    top: 10px;
+    right: 10px;
+    display: none;      
+}
+
+
+/* images */
+  /* pointer-events: none => prevents image blocking click events */
+  /* filter: invert() => changes black icons into white */
+.icon-img{
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+    filter: invert(100%) brightness(200%);
+}
+
+
+/* .menu-icon{
+    left: 10px;
+}
+.close-icon{
+    left: 190px;
+    display: none;
+} */
+.sidebar{
+    width: 250px;
+    height: 100vh;
+    background: #222;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: 0.3s ease;
+    color: white;
+    padding: 60px 0px;
+}
+
+
+/* shows close button only when sidebar is visible */
+.sidebar.active .close-icon{
+    display: block;
+}
+.sidebar.active{
+    left: 0;
+}
+.sidebar-title{
+    margin-top: 0;
+}
+
+.accordion-btn{
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+.accordion-btn:hover{
+    background: #444;
+}
+/* starts closed with the height 0px */
+.accordion-content{
+    max-height: 0;
+    overflow: hidden;
+    background: #444;
+    padding-left: 10px;
+    transition: max-height 0.3s ease;
+}
+.accordion-content p{
+    margin: 10px 0;
+}
