@@ -29,7 +29,7 @@ function testCases() {
     console.log(`Testcase ${index + 1}: ${passed ? "Pass" : "Fail"}`);
     if (!passed) {
       console.log(`Expected result: ${testcase.output}\n
-                Got Result: ${result}`);
+      Got Result: ${result}`);
     }
   });
 }
