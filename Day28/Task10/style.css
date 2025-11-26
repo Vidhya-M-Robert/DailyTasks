@@ -1,0 +1,12 @@
+p{
+    width: 800px;
+    background-color: blanchedalmond;
+    font-size: 24px;
+}
+.btn{
+    background-color: rgb(47, 255, 47);
+    padding: 20px 20px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
