@@ -78,11 +78,10 @@
 // console.log(rotatesArray([1,2,3,4,5],2));
 
 
-// function rotatesArray(arr,k){
-//    let newArr = [];
-//    let string = arr.toString();
-//     newArr = string.slice(-k);
-//    newArr = string.slice(arr.length,-k);
-//    return newArr;
-// }
-// console.log(rotatesArray([1,2,3,4,5],2));
+function rotatesArray(arr,k){
+
+  let lastPart = arr.slice(arr.length - k); 
+  let firstPart = arr.slice(0, arr.length - k);
+  return lastPart.concat(firstPart);
+}
+console.log(rotatesArray([1,2,3,4,5], 3));
