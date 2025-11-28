@@ -141,17 +141,17 @@
 // console.log(BubbleSort([24,3,72,59,34]));
 
 
-function InsertionSort(arr){
-  for(let i=0;i<arr[i];i++){
-    let sorted = arr[i];
-    if(arr[i]>arr[i+1]){
-      let temp = arr[i+1];
-        arr[i+1] = arr[i];
-        arr[i] = temp;
-    } 
-  };
-}
-InsertionSort([ 7, 12, 9, 11, 3]);
+// function InsertionSort(arr){
+//   for(let i=0;i<arr[i];i++){
+//     let sorted = arr[i];
+//     if(arr[i]>arr[i+1]){
+//       let temp = arr[i+1];
+//         arr[i+1] = arr[i];
+//         arr[i] = temp;
+//     } 
+//   };
+// }
+// InsertionSort([ 7, 12, 9, 11, 3]);
 
 // function selectionSort(arr){
 //   for(let i=0;i<arr.length;i++){
@@ -208,7 +208,7 @@ function quickSort(arr){
     let newArr = [...arr];
     for(let i=0;i<newArr.length;i++){
     let pivot = newArr[newArr.length-1];
-    if(newArr[i] < pivot){
+    if(newArr[i] > pivot){
     let temp = pivot;
     pivot = newArr[i];
     newArr[i] = temp;
@@ -217,3 +217,39 @@ function quickSort(arr){
   return newArr;
 }
 console.log(quickSort([ 7, 12, 9, 11, 3]));
+// function EuclideanAlgo(a,b){
+//   while(b!==0){
+//     if(a<b){
+//     let temp = a;
+//     a=b;
+//     b=temp;
+//   }
+//   let rem = a%b;
+//   if(rem === 0){
+//     return b
+//   }
+//   else{
+//     a = b;
+//     b=rem;
+//   }
+//   }
+// }
+// console.log(EuclideanAlgo(33,18))
+
+// function SieveEratosthenes(n){
+//   let newArr = [];
+//   for(let i=2;i<=n*n;i++){
+//     newArr.push(i);
+//   }
+//   for(let k=2;k<newArr.length;k++){
+//   for(let j=k;j<newArr.length;j++){
+//     if(newArr[j] % k === 0){
+//       newArr.splice(j,1);
+//     }
+//   }
+// }
+//  return newArr.slice(0,n);
+// }
+// console.log(SieveEratosthenes(0));
+
+
