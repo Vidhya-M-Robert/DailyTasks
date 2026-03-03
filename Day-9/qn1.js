@@ -4,5 +4,4 @@ const createPromise = new Promise((resolve, reject) => {
     },2000)
 }).then(msg => {
     console.log(msg);
-}
-)
+})

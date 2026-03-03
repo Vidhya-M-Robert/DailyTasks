@@ -19,7 +19,7 @@ function invertKeyValues(obj){
     return newObj
 };
 
-invertKeyValues({ a: 9, b: 0, c:8 });
+// invertKeyValues({1: "hello",2:"hey"});
 
 function testCase(){
     const testcases = [
@@ -58,6 +58,15 @@ function testCase(){
             input: {},
             output: "Invalid"
         },
+        {
+            input: {1: "hello",2:"hey"},
+            output: { hello: '1', hey: '2' }
+        },
+        {
+            input: ["hello","a","10"],
+            output: "Invalid"
+        },
+
     ];
    testcases.forEach((testcase,index) =>{
         const outputOriginal = invertKeyValues(testcase.input);
